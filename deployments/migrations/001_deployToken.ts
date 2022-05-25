@@ -12,7 +12,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment): Pr
 
   await deploy('StakeToken', {
     from: deployer,
-    args: ["Stake Token", "STAKE", 18, '1000000000000000000000'], // initial 1000 STAKE
+    args: ["Stake Token", "STAKE", 18, '100000000000000000000000'], // initial 100000 STAKE
     log: true,
   });
 };

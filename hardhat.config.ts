@@ -90,7 +90,7 @@ export default {
     },
     bsctest: {
       chainId: 97,
-      url: 'https://data-seed-prebsc-1-s2.binance.org:8545',
+      url: 'https://data-seed-prebsc-1-s1.binance.org:8545',
       accounts: [`0x${DEPLOYER_PRIVATE_KEY}`], // Using private key instead of mnemonic for vanity deploy
       saveDeployments: true,
     },

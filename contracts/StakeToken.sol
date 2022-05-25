@@ -21,11 +21,13 @@ contract StakeToken is ERC20, Ownable {
         return _decimals;
     }
 
-    function mint(address account, uint256 amount) public onlyOwner {
+    function mint(address account, uint256 amount) public onlyOwner returns (bool) {
         _mint(account, amount);
+        return true;
     }
 
-    function burn(address account, uint256 amount) public onlyOwner {
+    function burn(address account, uint256 amount) public onlyOwner returns (bool) {
         _burn(account, amount);
+        return true;
     }
 }
